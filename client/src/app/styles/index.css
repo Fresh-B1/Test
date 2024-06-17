@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh;
+    background: linear-gradient(
+      180deg,
+      #02dffcb7,
+      #04b2e79a,
+      #10f88477,
+      #1900ff9b
+    );
+    background-size: 400% 400%;
+    animation: gradient 5s ease infinite;
+    font-family: 'Underdog', system-ui;
+  }
+
+  @keyframes gradient {
+    0% {
+      background-position: 50% 0%;
+    }
+    50% {
+      background-position: 50% 100%;
+    }
+    100% {
+      background-position: 50% 0%;
+    }
+  }
